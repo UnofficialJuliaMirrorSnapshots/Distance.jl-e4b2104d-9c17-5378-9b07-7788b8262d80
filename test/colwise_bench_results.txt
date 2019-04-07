@@ -1,0 +1,72 @@
+bench SqEuclidean
+    loop:     t =  0.046962s
+    colwise:  t =  0.002782s  |  gain = 16.8782x
+
+bench Euclidean
+    loop:     t =  0.046667s
+    colwise:  t =  0.002900s  |  gain = 16.0937x
+
+bench Cityblock
+    loop:     t =  0.046619s
+    colwise:  t =  0.003100s  |  gain = 15.0390x
+
+bench Chebyshev
+    loop:     t =  0.053578s
+    colwise:  t =  0.010856s  |  gain =  4.9356x
+
+bench Minkowski
+    loop:     t =  0.061804s
+    colwise:  t =  0.023570s  |  gain =  2.6221x
+
+bench Hamming
+    loop:     t =  0.044047s
+    colwise:  t =  0.002190s  |  gain = 20.1131x
+
+bench CosineDist
+    loop:     t =  0.044960s
+    colwise:  t =  0.002855s  |  gain = 15.7457x
+
+bench CorrDist
+    loop:     t =  0.080828s
+    colwise:  t =  0.029708s  |  gain =  2.7207x
+
+bench ChiSqDist
+    loop:     t =  0.051009s
+    colwise:  t =  0.008088s  |  gain =  6.3070x
+
+bench KLDivergence
+    loop:     t =  0.079598s
+    colwise:  t =  0.035353s  |  gain =  2.2515x
+
+bench JSDivergence
+    loop:     t =  0.545789s
+    colwise:  t =  0.493362s  |  gain =  1.1063x
+
+bench WeightedSqEuclidean{Float64}
+    loop:     t =  0.046182s
+    colwise:  t =  0.003219s  |  gain = 14.3477x
+
+bench WeightedEuclidean{Float64}
+    loop:     t =  0.046831s
+    colwise:  t =  0.004122s  |  gain = 11.3603x
+
+bench WeightedCityblock{Float64}
+    loop:     t =  0.046457s
+    colwise:  t =  0.003636s  |  gain = 12.7781x
+
+bench WeightedMinkowski{Float64}
+    loop:     t =  0.062532s
+    colwise:  t =  0.020486s  |  gain =  3.0524x
+
+bench WeightedHamming{Float64}
+    loop:     t =  0.046217s
+    colwise:  t =  0.002269s  |  gain = 20.3667x
+
+bench SqMahalanobis{Float64}
+    loop:     t =  0.150364s
+    colwise:  t =  0.042335s  |  gain =  3.5518x
+
+bench Mahalanobis{Float64}
+    loop:     t =  0.159638s
+    colwise:  t =  0.041071s  |  gain =  3.8869x
+
